@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        function tong(arr){
+            
+        }
+        let n=parseInt(prompt("Nhập N:"));
+        let arr= new Array(Number, n-1);                        // Khai báo mảng , dạng Number, có n phẩn tử
+        let tong=0;                                             // khai báo biến tính tổng phần tử
+    for (let i=0;i<n;i++){                                      
+            arr[i]= parseInt(prompt("arr["+i +"]="));           //Nhập phần tử thứ i của mảng từ bàn phím
+            tong+=arr[i];                                       //cộng phần tử vừa nhập vào tổng
+        }
+        for(let i=0;i<n;i++)document.write(arr[i]+"<br>");      //in mảng
+        document.write("tong cac phan tu trong mang la "+sum);  //in tổng của các phần tử trong mảng
+    </script>
+</body>
+</html>
