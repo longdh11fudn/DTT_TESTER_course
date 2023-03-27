@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        let n = parseInt(prompt("Nhập N" ));
+        let arr = new Array(Number, n-1);
+        let tong = 0;
+        let soluong = 0;
+        for (let i=0; i<n; i++){
+            arr[i] = parseInt(prompt("arr[" + i + "]="));   
+            if (arr[i]%2 ===1 && i%2 ===0)   {
+                tong += arr[i];
+                soluong +=1;
+            }
+        }
+        for (let i = 0; i < n; i++)document.write(arr[i] + "<br>");
+         document.write ("Trung bình cộng số lẻ ở vị trí chẵn " + parseFloat(tong)/parseFloat(soluong)); // float 
+    </script>
+</body>
+</html>

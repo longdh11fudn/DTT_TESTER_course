@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <script>
+        let n = parseInt(prompt("Nhập N:"));
+        let arr = new Array(Number, n - 1);
+        let soluong = 0;
+        for (let i = 0; i < n; i++) {
+            arr[i] = parseInt(prompt("arr[" + i + "]"));
+            let can2 = parseInt(Math.sqrt(arr[i]));
+            if (can2 * can2 === arr[i]) {
+                soluong += 1;
+            }
+            
+        }for(let i=0; i<n; i++)
+        document.write(arr[i] + " ");
+        document.write("Số lượng số chính phương là " +soluong);
+    </script>
+</body>
+
+</html>
