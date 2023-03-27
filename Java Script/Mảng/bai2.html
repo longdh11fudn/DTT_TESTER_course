@@ -12,21 +12,20 @@
 
 <body>
     <script>
-        let n = parseInt(prompt("Nhập n: "));
-        let arr = new Array(Number, n - 1);
-
-        arr[0]= parseInt(prompt("arr[" + 0 + "]="));
-        let max = arr[0];
-        for (let i = 1; i < n; i++) {
-            arr[i] = parseInt(prompt("arr[" + i + "]="));
-            if (arr[i] > max){
-                max= arr[i];
+        let n = parseInt(prompt("Nhập n: "));                               //Nhập số lượng phần tử N của mảng
+        let arr = new Array(Number, n - 1);                                 //Khai báo mảng số nguyên gồm N phần tử
+        arr[0]= parseInt(prompt("arr[" + 0 + "]="));                        //Nhập phần tử đầu tiên của mảng
+        let max = arr[0];                                                   //Gắn giá trị max bằng phần tử đầu tiên
+    for (let i = 1; i < n; i++) {                                           //Duyệt Các phần tử còn lại của mảng
+            arr[i] = parseInt(prompt("arr[" + i + "]="));                   //Nhập phần tử thứ i của mảng
+            if (arr[i] > max){                                              //Nếu phần tử thứ i lớn hơn max 
+                max= arr[i];                                                //Thì gắn giá trị phần tử đó cho max
             }
         }
-        for(let i=0; i<n; i++){
+        for(let i=0; i<n; i++){                                             //In ra mảng
             document.write (arr[i] + " ");
         }
-        document.write ("<br>" +"Phần tử lớn nhất của dãy là: " + max);
+        document.write ("<br>" +"Phần tử lớn nhất của dãy là: " + max);     
         
     </script>
 

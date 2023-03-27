@@ -10,15 +10,15 @@
 </head>
 <body>
     <script>
-        let n = parseInt(prompt("Nhập N" ));
-        let arr = new Array(Number, n-1);
-        let tong = 0;
-        let soluong = 0;
+        let n = parseInt(prompt("Nhập N" ));                                //Nhập số lượng phần tử N của mảng
+        let arr = new Array(Number, n-1);                                   //Khai báo mảng số nguyên gồm N phần tử 
+        let tong = 0;                                                       //khai báo biến tính tổng các phần tử thoải điều kiện
+        let soluong = 0;                                                    //khai báo biến đếm số phần tử thoải điều kiện
         for (let i=0; i<n; i++){
-            arr[i] = parseInt(prompt("arr[" + i + "]="));   
-            if (arr[i]%2 ===1 && i%2 ===0)   {
-                tong += arr[i];
-                soluong +=1;
+            arr[i] = parseInt(prompt("arr[" + i + "]="));                   
+            if (arr[i]%2 ===1 && i%2 ===0)   {                              //Nếu phần tử thoải mãn điều kiện
+                tong += arr[i];                                             //Cộng thêm vào tổng 
+                soluong +=1;                                                //Tăng số lượng phần tử thoải mãn lên 1
             }
         }
         for (let i = 0; i < n; i++)document.write(arr[i] + "<br>");

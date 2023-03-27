@@ -12,14 +12,14 @@
 
 <body>
     <script>
-        let n = parseInt(prompt("Nhập N:"));
-        let arr = new Array(Number, n - 1);
-        let soluong = 0;
+        let n = parseInt(prompt("Nhập N:"));                                //Nhập số lượng phần tử N của mảng
+        let arr = new Array(Number, n - 1);                                 //Khai báo mảng số nguyên gồm N phần tử 
+        let soluong = 0;                                                    //khai báo biến đếm số phần tử thoải điều kiện
         for (let i = 0; i < n; i++) {
             arr[i] = parseInt(prompt("arr[" + i + "]"));
-            let can2 = parseInt(Math.sqrt(arr[i]));
-            if (can2 * can2 === arr[i]) {
-                soluong += 1;
+            let can2 = parseInt(Math.sqrt(arr[i]));                         //Tính phần nguyên căn bật 2 của phần tử thứ i
+            if (can2 * can2 === arr[i]) {                                   //Kiểm tra xem phần tử thứ i có phải số chính phương hay không
+                soluong += 1;                                              
             }
             
         }for(let i=0; i<n; i++)

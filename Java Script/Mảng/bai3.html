@@ -10,13 +10,13 @@
 </head>
 <body>
     <script>
-    let n = parseInt(prompt("Nhập N: "));
-    let arr = new Array (Number, n-1);
-    let vitri=0;
-    for (let i=0; i<n; i++){
-        arr[i]= parseInt(prompt("arr[" + i + "]="));
-        if (arr[i]< arr[vitri]){
-            vitri= i;
+    let n = parseInt(prompt("Nhập N: "));                              //Nhập số lượng phần tử N của mảng
+    let arr = new Array (Number, n-1);                                 //Khai báo mảng số nguyên gồm N phần tử
+    let vitri=0;                                                       //Gắn vị trí phần tử nhỏ nhất hiện tại là 0;
+    for (let i=0; i<n; i++){                                           //Duyệt Các phần tử còn lại của mảng
+        arr[i]= parseInt(prompt("arr[" + i + "]="));                   //Nhập phần tử thứ i của mảng
+        if (arr[i]< arr[vitri]){                                       //Nếu phần tử thứ i nhỏ hơn vị trí nhỏ nhất hiện tại
+            vitri= i;                                                  //Gắn vị trí là i
         }
     }
     for(let i=0; i<n; i++){
