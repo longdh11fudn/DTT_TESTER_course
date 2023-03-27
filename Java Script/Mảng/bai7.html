@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -8,17 +9,29 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
 </head>
+
 <body>
     <script>
-         let n = parseInt(prompt("Nhập N" ));
-         let k = parseInt(prompt("Nhập K" ));
-         let arr = new Array (Number, n-1);
-         for (let i=0; i<n; i++){
-            arr[i] = parseInt(prompt("arr[" + i + "]="));   
-            if (arr[i]===k){
-                
+        let n = parseInt(prompt("Nhập N"));
+        let k = parseInt(prompt("Nhập K"));
+        let arr = new Array(Number, n - 1);
+        for (let i = 0; i < n; i++) {
+            arr[i] = parseInt(prompt("arr[" + i + "]="));
+            if(arr[i]==k){                                      // nếu số vừa nhập =k thì loại bỏ giá trị đó, coi như phần tử
+                i--;                                            // chưa xuất hiện, lùi biến đếm lại 1 để vòng lặp tiếp theo nhập
+                n--;                                            // lại phần tử mới. Giảm số lượng phần tử n đi 1.
             }
-         }
+
+        }
+        for (let i = 0; i < n; i++) {
+            document.write(arr[i] + " ");
+        }
+        // let result = arr.filter(item => item != k);
+        // for (let i = 0; i < result.length; i++) {
+        //     document.write(result[i] + " ");
+        // }
+        
     </script>
 </body>
+
 </html>
