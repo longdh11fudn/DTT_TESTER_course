@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        let n = parseInt(prompt("Nhập N" ));                                //Nhập số lượng phần tử N của mảng
+        let arr = new Array(Number, n-1);                                   //Khai báo mảng số nguyên gồm N phần tử 
+        let tong = 0;                                                       //khai báo biến tính tổng các phần tử thoải điều kiện
+        let soluong = 0;                                                    //khai báo biến đếm số phần tử thoải điều kiện
+        for (let i=0; i<n; i++){
+            arr[i] = parseInt(prompt("arr[" + i + "]="));                   
+            if (arr[i]%2 ===1 && i%2 ===0)   {                              //Nếu phần tử thoải mãn điều kiện
+                tong += arr[i];                                             //Cộng thêm vào tổng 
+                soluong +=1;                                                //Tăng số lượng phần tử thoải mãn lên 1
+            }
+        }
+        for (let i = 0; i < n; i++)document.write(arr[i] + "<br>");
+         document.write ("Trung bình cộng số lẻ ở vị trí chẵn " + parseFloat(tong)/parseFloat(soluong)); // float 
+    </script>
+</body>
+</html>
