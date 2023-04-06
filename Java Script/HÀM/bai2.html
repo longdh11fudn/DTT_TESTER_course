@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -9,20 +8,15 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
 </head>
-
 <body>
     <p id="demo"></p>
     <script>
-        let a = (parseInt(prompt("a")));
-        let b = parseInt(prompt("b"));
-        document.write (a);
-        document.write(b);
-        function sum(num1, num2)  {
-            return (num1 + num2);
+        let x = parseInt(prompt("x"));
+        function get_abs(numx){
+            if(numx > 0) return numx;
+            return -numx;
         }
-        document.getElementById("demo").innerHTML=String(sum(a, b));
-
+        document.getElementById("demo").innerHTML= get_abs(x);
     </script>
 </body>
-
 </html>
