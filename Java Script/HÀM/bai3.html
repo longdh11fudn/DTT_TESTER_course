@@ -17,21 +17,16 @@
 
         //khai báo hàm kiểm tra số nguyên dương, tham số n
         function songuyenduong(numn){
-            if (numn > 0 && numn % 1 ===0){
-                return numn;
-                return "khong phai la so nguyen duong";
-                
-            }
-        }document.getElementById("demo").innerHTML= songuyenduong(n);
-
         //câu lệnh điều kiện kiểm tra n
-
-        //trả về câu thông báo đúng nếu điều kiện đúng(return)
-
-        //trả về câu thông báo sai
-
+        if (numn > 0 && numn % 1 ===0){  
+                //trả về câu thông báo đúng nếu điều kiện đúng(return)
+                return numn;   //SỬA LẠI CHỖ NÀY  
+            }
+            //trả về câu thông báo sai
+            return "khong phai la so nguyen duong";
+        }
         //Thực hiện viết ra màn hình hàm kiểm tra với tham số n
-       
+        document.getElementById("demo").innerHTML= songuyenduong(n);
         
     </script>
 </body>
