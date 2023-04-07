@@ -9,10 +9,20 @@
     <script src='main.js'></script>
 </head>
 <body>
+   <p id="demo"></p>
     <script>
+        
         //nhập N bằng prompt
+       let n = parseInt(prompt("Nhap so N: "));
 
         //khai báo hàm kiểm tra số nguyên dương, tham số n
+        function songuyenduong(numn){
+            if (numn > 0 && numn % 1 ===0){
+                return numn;
+                return "khong phai la so nguyen duong";
+                
+            }
+        }document.getElementById("demo").innerHTML= songuyenduong(n);
 
         //câu lệnh điều kiện kiểm tra n
 
@@ -21,6 +31,7 @@
         //trả về câu thông báo sai
 
         //Thực hiện viết ra màn hình hàm kiểm tra với tham số n
+       
         
     </script>
 </body>
